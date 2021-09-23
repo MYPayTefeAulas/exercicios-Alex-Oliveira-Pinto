@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Alex Oliveira/AndroidStudioProjects/MeuPrimeiroApp/app/src/main/res/layout/activity_agenda.xml" value="0.264" />
+        <entry key="..\:/Users/Alex Oliveira/AndroidStudioProjects/MeuPrimeiroApp/app/src/main/res/layout/activity_dados.xml" value="0.4" />
+        <entry key="..\:/Users/Alex Oliveira/AndroidStudioProjects/MeuPrimeiroApp/app/src/main/res/layout/activity_greeter1.xml" value="0.4" />
+        <entry key="..\:/Users/Alex Oliveira/AndroidStudioProjects/MeuPrimeiroApp/app/src/main/res/layout/activity_greeter2.xml" value="0.4" />
+        <entry key="..\:/Users/Alex Oliveira/AndroidStudioProjects/MeuPrimeiroApp/app/src/main/res/layout/activity_greeter3.xml" value="0.536" />
+        <entry key="..\:/Users/Alex Oliveira/AndroidStudioProjects/MeuPrimeiroApp/app/src/main/res/layout/activity_greeter4.xml" value="0.4" />
+        <entry key="..\:/Users/Alex Oliveira/AndroidStudioProjects/MeuPrimeiroApp/app/src/main/res/layout/activity_listas.xml" value="0.4" />
+        <entry key="..\:/Users/Alex Oliveira/AndroidStudioProjects/MeuPrimeiroApp/app/src/main/res/layout/activity_main.xml" value="0.4" />
+        <entry key="..\:/Users/Alex Oliveira/AndroidStudioProjects/MeuPrimeiroApp/app/src/main/res/layout/activity_pessoas.xml" value="0.536" />
+        <entry key="..\:/Users/Alex Oliveira/AndroidStudioProjects/MeuPrimeiroApp/app/src/main/res/layout/activity_tela_iactivity.xml" value="0.4" />
+        <entry key="..\:/Users/Alex Oliveira/AndroidStudioProjects/MeuPrimeiroApp/app/src/main/res/layout/activity_tela_iiactivity.xml" value="0.536" />
+        <entry key="..\:/Users/Alex Oliveira/AndroidStudioProjects/MeuPrimeiroApp/app/src/main/res/layout/activity_tela_iiiactivity.xml" value="0.4" />
+        <entry key="..\:/Users/Alex Oliveira/AndroidStudioProjects/MeuPrimeiroApp/app/src/main/res/layout/activity_tela_inicial.xml" value="0.536" />
+        <entry key="..\:/Users/Alex Oliveira/AndroidStudioProjects/MeuPrimeiroApp/app/src/main/res/layout/activity_tela_inicial_my_patas_vs_um.xml" value="0.24010416666666667" />
+        <entry key="..\:/Users/Alex Oliveira/AndroidStudioProjects/MeuPrimeiroApp/app/src/main/res/layout/activity_tela_inicial_my_patasvs_um.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Alex Oliveira/AndroidStudioProjects/MeuPrimeiroApp/app/src/main/res/layout/activity_tela_inicial_vs_um_my_patas.xml" value="0.4" />
+        <entry key="..\:/Users/Alex Oliveira/AndroidStudioProjects/MeuPrimeiroApp/app/src/main/res/layout/activity_tela_ivactivity.xml" value="0.4" />
+        <entry key="..\:/Users/Alex Oliveira/AndroidStudioProjects/MeuPrimeiroApp/app/src/main/res/layout/activity_tela_um.xml" value="0.25416666666666665" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
