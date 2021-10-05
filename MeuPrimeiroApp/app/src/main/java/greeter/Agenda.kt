@@ -4,18 +4,15 @@ class Agenda() {
     private val listaContatos = mutableListOf<Pessoa>()
     private var indiceAtual = 0
 
-    fun testarContato(contato: Pessoa): String{
-
-        var encontrou : String = "false"
-
+    fun testarContato(contato: Pessoa): Boolean {
+        var resultado : Boolean = false
         for (lista in listaContatos) {
-            if ((lista.nome == contato.nome) && (lista.telefone == contato.telefone)) {
-                encontrou = "true"
+            if (lista.telefone == contato.telefone){
+                resultado = true
                 break
-
             }
         }
-        return encontrou
+        return resultado
     }
 
     fun salvarContato(novoContato: Pessoa) {
@@ -30,7 +27,7 @@ class Agenda() {
         return "${contatoAtual.nome}"
     }
 
-    fun imprimirTelefoneContatos(): String{
+    fun imprimirTelefoneContatos(): String {
         indiceAtual -= 1
         if(indiceAtual == listaContatos.size)
             indiceAtual = 0
@@ -50,15 +47,11 @@ class Agenda() {
         }
     }
 
-    fun retornaNumeroContatos(): Int {
-        return listaContatos.size
-    }
-
-    fun pesquisarContato(contato: Pessoa): String {
-        var encontrou : String = "false"
+    fun pesquisarContato(contato: Pessoa): Boolean {
+        var encontrou : Boolean = false
         for (lista in listaContatos) {
             if(lista.nome == contato.nome) {
-                encontrou = "true"
+                encontrou = true
                 break
             }
         }
@@ -89,5 +82,20 @@ class Agenda() {
         return encontrou
     }
 
+    fun checarVazio(): Boolean{
+        return listaContatos.isEmpty()
+    }
 
 }
+
+//    fun testarContato(contato: Pessoa): String{
+//        var encontrou : String = "false"
+//
+//        for (lista in listaContatos) {
+//            if ((lista.nome == contato.nome)&&(lista.telefone == contato.telefone)) {
+//                encontrou = "true"
+//                break
+//            }
+//        }
+//        return encontrou
+//    }

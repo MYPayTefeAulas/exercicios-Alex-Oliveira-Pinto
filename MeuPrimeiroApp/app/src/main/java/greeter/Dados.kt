@@ -11,4 +11,5 @@ class Dado(val numeroLados: Int) {
         }
         return "${qtdLados.shuffled().first()}"
     }
+
 }
