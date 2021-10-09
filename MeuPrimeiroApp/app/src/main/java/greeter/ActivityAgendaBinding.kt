@@ -1,5 +1,0 @@
-package greeter
-
-class ActivityAgendaBinding {
-
-}

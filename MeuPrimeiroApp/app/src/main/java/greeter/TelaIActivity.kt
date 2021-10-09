@@ -1,10 +1,10 @@
-package greeter
+package MyPatas_vs_I
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.meuprimeiroapp.R
 import com.example.meuprimeiroapp.databinding.ActivityTelaIactivityBinding
+import greeter.TelaIIActivity
 
 class telaIActivity : AppCompatActivity() {
     private lateinit var binding :ActivityTelaIactivityBinding

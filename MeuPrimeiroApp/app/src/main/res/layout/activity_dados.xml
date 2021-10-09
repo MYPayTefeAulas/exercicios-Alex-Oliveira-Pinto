@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_alignParentBottom="false"
+    android:backgroundTint="#FA0606"
     android:foregroundTint="#00BCD4"
     tools:context="greeter.DadosActivity">
 
@@ -135,6 +136,8 @@
         android:id="@+id/btSortear"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="#E12222"
+        android:backgroundTint="@color/teal_200"
         android:shadowColor="#E91E63"
         android:text="SORTEAR"
         android:textColorHighlight="#FFEB3B"
@@ -143,10 +146,10 @@
         app:iconTint="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.686"
+        app:layout_constraintVertical_bias="0.62"
         app:rippleColor="#FFEB3B"
         app:strokeColor="#FFEB3B" />
 </androidx.constraintlayout.widget.ConstraintLayout>
