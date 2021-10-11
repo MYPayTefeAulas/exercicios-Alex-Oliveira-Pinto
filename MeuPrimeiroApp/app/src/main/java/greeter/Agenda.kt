@@ -48,7 +48,9 @@ class Agenda() {
     }
 
     fun pesquisarContato(contato: Pessoa): Boolean {
+
         var encontrou = false
+
         for (lista in listaContatos) {
             if(lista.nome == contato.nome) {
                 encontrou = true
@@ -82,9 +84,9 @@ class Agenda() {
         return encontrou
     }
 
+
     fun checarVazio(): Boolean {
         return listaContatos.isEmpty()
     }
-
 
 }

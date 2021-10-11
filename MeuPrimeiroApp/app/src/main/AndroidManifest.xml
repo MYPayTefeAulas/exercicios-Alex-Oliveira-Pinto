@@ -13,9 +13,6 @@
             android:name="greeter.CalculadoraActivity"
             android:exported="true" />
         <activity
-            android:name="greeter.BatalhaRPGActivity"
-            android:exported="true" />
-        <activity
             android:name="greeter.AgendaActivity"
             android:exported="true" />
         <activity
@@ -28,7 +25,7 @@
             android:name="greeter.TelaIIActivity"
             android:exported="true" />
         <activity
-            android:name="MyPatas_vs_I.telaIActivity"
+            android:name="greeter.telaIActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

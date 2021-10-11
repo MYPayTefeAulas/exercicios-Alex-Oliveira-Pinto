@@ -21,11 +21,18 @@
         <entry key="..\:/Users/Alex Oliveira/AndroidStudioProjects/MeuPrimeiroApp/app/src/main/res/layout/activity_tela_inicial_vs_um_my_patas.xml" value="0.4" />
         <entry key="..\:/Users/Alex Oliveira/AndroidStudioProjects/MeuPrimeiroApp/app/src/main/res/layout/activity_tela_ivactivity.xml" value="0.4" />
         <entry key="..\:/Users/Alex Oliveira/AndroidStudioProjects/MeuPrimeiroApp/app/src/main/res/layout/activity_tela_um.xml" value="0.25416666666666665" />
+<<<<<<< HEAD
         <entry key="..\:/Users/Alex Oliveira/git/exercicios-Alex-Oliveira-Pinto/MeuPrimeiroApp/app/src/main/res/layout/activity_agenda.xml" value="0.4" />
         <entry key="..\:/Users/Alex Oliveira/git/exercicios-Alex-Oliveira-Pinto/MeuPrimeiroApp/app/src/main/res/layout/activity_batalha_rpgactivity.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Alex Oliveira/git/exercicios-Alex-Oliveira-Pinto/MeuPrimeiroApp/app/src/main/res/layout/activity_batalha_rpgactivity2.xml" value="0.264" />
         <entry key="..\:/Users/Alex Oliveira/git/exercicios-Alex-Oliveira-Pinto/MeuPrimeiroApp/app/src/main/res/layout/activity_calculadora.xml" value="0.264" />
         <entry key="..\:/Users/Alex Oliveira/git/exercicios-Alex-Oliveira-Pinto/MeuPrimeiroApp/app/src/main/res/layout/activity_dados.xml" value="0.4" />
+=======
+        <entry key="..\:/Users/Alex Oliveira/git/exercicios-Alex-Oliveira-Pinto/MeuPrimeiroApp/app/src/main/res/layout/activity_agenda.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Alex Oliveira/git/exercicios-Alex-Oliveira-Pinto/MeuPrimeiroApp/app/src/main/res/layout/activity_batalha_rpgactivity.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Alex Oliveira/git/exercicios-Alex-Oliveira-Pinto/MeuPrimeiroApp/app/src/main/res/layout/activity_batalha_rpgactivity2.xml" value="0.4" />
+        <entry key="..\:/Users/Alex Oliveira/git/exercicios-Alex-Oliveira-Pinto/MeuPrimeiroApp/app/src/main/res/layout/activity_calculadora.xml" value="0.264" />
+>>>>>>> main
       </map>
     </option>
   </component>

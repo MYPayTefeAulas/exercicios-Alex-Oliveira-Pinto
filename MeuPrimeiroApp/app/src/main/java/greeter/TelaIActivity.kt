@@ -1,4 +1,4 @@
-package MyPatas_vs_I
+package greeter
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
