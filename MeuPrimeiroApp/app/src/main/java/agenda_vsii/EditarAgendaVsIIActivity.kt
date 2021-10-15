@@ -1,12 +1,11 @@
-package greeter
+package agenda_vsii
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.meuprimeiroapp.R
 
-class TelaIIIActivity : AppCompatActivity() {
+class EditarAgendaVsIIActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_tela_iiiactivity)
+        setContentView(R.layout.activity_editar_agenda_vs_iiactivity)
     }
 }

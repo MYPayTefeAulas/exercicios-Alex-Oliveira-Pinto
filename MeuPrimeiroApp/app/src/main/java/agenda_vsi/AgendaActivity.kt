@@ -1,13 +1,11 @@
-package greeter
+package agenda_vsi
 
 import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
-import android.text.Editable
-import androidx.annotation.ColorInt
-import com.example.meuprimeiroapp.R
 import com.example.meuprimeiroapp.databinding.ActivityAgendaBinding
+import greeter.Pessoa
 
 class AgendaActivity : AppCompatActivity() {
     private lateinit var binding: ActivityAgendaBinding
