@@ -1,8 +1,8 @@
-package greeter
+package calculadora_vsii
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.meuprimeiroapp.R
+import calculadora_vsii.Calculadora
 import com.example.meuprimeiroapp.databinding.ActivityCalculadoraBinding
 
 class CalculadoraActivity : AppCompatActivity() {

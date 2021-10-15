@@ -1,4 +1,6 @@
-package greeter
+package greeter_iiii
+
+import greeter.Pessoa
 
 class Greeter4(val cumprimento : String, val sufixo: String) {
     companion object {

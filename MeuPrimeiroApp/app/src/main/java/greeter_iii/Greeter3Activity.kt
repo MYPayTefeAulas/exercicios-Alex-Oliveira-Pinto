@@ -1,8 +1,9 @@
-package greeter
+package greeter_iii
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.meuprimeiroapp.databinding.ActivityGreeter3Binding
+import greeter_iii.Greeter3
 
 class Greeter3Activity : AppCompatActivity() {
     private lateinit var binding: ActivityGreeter3Binding

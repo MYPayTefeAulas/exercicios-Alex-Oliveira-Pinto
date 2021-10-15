@@ -10,19 +10,25 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MeuPrimeiroApp">
         <activity
-            android:name="greeter.CalculadoraActivity"
+            android:name="agenda_vsii.EditarAgendaVsIIActivity"
             android:exported="true" />
         <activity
-            android:name="greeter.AgendaActivity"
+            android:name="agenda_vsii.Agenda_vsiiActivity"
             android:exported="true" />
         <activity
-            android:name="greeter.TelaIVActivity"
+            android:name="calculadora_vsii.CalculadoraActivity"
             android:exported="true" />
         <activity
-            android:name="greeter.TelaIIIActivity"
+            android:name="agenda_vsi.AgendaActivity"
             android:exported="true" />
         <activity
-            android:name="greeter.TelaIIActivity"
+            android:name="mypatas_vsi.TelaIVActivity"
+            android:exported="true" />
+        <activity
+            android:name="mypatas_vsi.TelaIIIActivity"
+            android:exported="true" />
+        <activity
+            android:name="mypatas_vsi.TelaIIActivity"
             android:exported="true" />
         <activity
             android:name="greeter.telaIActivity"
@@ -37,13 +43,13 @@
             android:name="greeter.TelaInicialActivity"
             android:exported="true" />
         <activity
-            android:name="greeter.DadosActivity"
+            android:name="sorteio_dados.DadosActivity"
             android:exported="true" />
         <activity
-            android:name="greeter.Greeter4Activity"
+            android:name="greeter_iiii.Greeter4Activity"
             android:exported="true" />
         <activity
-            android:name="greeter.Greeter3Activity"
+            android:name="greeter_iii.Greeter3Activity"
             android:exported="true" />
         <activity
             android:name="greeter.PessoasActivity"

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="greeter.Greeter3Activity">
+    tools:context="greeter_iii.Greeter3Activity">
 
     <TextView
         android:id="@+id/txtGreeter"

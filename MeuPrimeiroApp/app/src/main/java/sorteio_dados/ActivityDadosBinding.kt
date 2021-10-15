@@ -1,2 +1,5 @@
-package sorteio_dados 
+package sorteio_dados
 
+class ActivityDadosBinding {
+
+}

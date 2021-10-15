@@ -1,8 +1,9 @@
-package greeter
+package greeter_iiii
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.meuprimeiroapp.databinding.ActivityGreeter4Binding
+import greeter.Pessoa
 
 class Greeter4Activity : AppCompatActivity() {
     private lateinit var binding: ActivityGreeter4Binding

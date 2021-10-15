@@ -1,4 +1,4 @@
-package greeter
+package mypatas_vsi
 
 class UsuariosMyPatas {
     open class Usuario(var login: String, var senha: String) {

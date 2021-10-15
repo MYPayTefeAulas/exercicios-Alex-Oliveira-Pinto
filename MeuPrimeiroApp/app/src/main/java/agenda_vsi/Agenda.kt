@@ -1,4 +1,6 @@
-package greeter
+package agenda_vsi
+
+import greeter.Pessoa
 
 class Agenda() {
     private val listaContatos = mutableListOf<Pessoa>()

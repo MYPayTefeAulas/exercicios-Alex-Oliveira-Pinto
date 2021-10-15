@@ -3,6 +3,8 @@ package greeter
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.meuprimeiroapp.databinding.ActivityTelaInicialBinding
+import greeter_iiii.Greeter4Activity
+import sorteio_dados.DadosActivity
 import android.content.Intent as Intent1
 
 class TelaInicialActivity : AppCompatActivity() {
