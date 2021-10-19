@@ -3,9 +3,9 @@ package agenda_vsii
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
-class ListaContatosAgendaIIActivity : AppCompatActivity() {
+class ListaContatosActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_lista_contatos_agenda_iiactivity)
+        setContentView(R.layout.activity_lista_contatos)
     }
 }
