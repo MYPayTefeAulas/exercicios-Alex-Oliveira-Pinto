@@ -10,28 +10,25 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MeuPrimeiroApp">
         <activity
+            android:name="agenda_vsii.ListaContatosActivity"
+            android:exported="true" />
+        <activity
+            android:name="agenda_vsii.EditarAgendaIIActivity"
+            android:exported="true" />
+        <activity
+            android:name="agenda_vsiii.EditarContatoActivity"
+            android:exported="true" />
+        <activity
+            android:name="agenda_vsiii.AgendaVsIIIActivity"
+            android:exported="true" />
+        <activity
+            android:name="agenda_vsii.ListaContatosAgendaIIActivity"
+            android:exported="true" />
+        <activity
             android:name="agenda_vsii.EditarAgendaVsIIActivity"
             android:exported="true" />
         <activity
             android:name="agenda_vsii.Agenda_vsiiActivity"
-            android:exported="true" />
-        <activity
-            android:name="calculadora_vsii.CalculadoraActivity"
-            android:exported="true" />
-        <activity
-            android:name="agenda_vsi.AgendaActivity"
-            android:exported="true" />
-        <activity
-            android:name="mypatas_vsi.TelaIVActivity"
-            android:exported="true" />
-        <activity
-            android:name="mypatas_vsi.TelaIIIActivity"
-            android:exported="true" />
-        <activity
-            android:name="mypatas_vsi.TelaIIActivity"
-            android:exported="true" />
-        <activity
-            android:name="greeter.telaIActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -39,6 +36,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="agenda_vsi.AgendaActivity"
+            android:exported="true" />
         <activity
             android:name="greeter.TelaInicialActivity"
             android:exported="true" />

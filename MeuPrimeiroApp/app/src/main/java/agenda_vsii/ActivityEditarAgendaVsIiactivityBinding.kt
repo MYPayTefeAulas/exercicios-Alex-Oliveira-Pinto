@@ -1,2 +1,5 @@
-package agenda_vsii 
+package agenda_vsii
 
+class ActivityEditarAgendaVsIiactivityBinding {
+
+}
