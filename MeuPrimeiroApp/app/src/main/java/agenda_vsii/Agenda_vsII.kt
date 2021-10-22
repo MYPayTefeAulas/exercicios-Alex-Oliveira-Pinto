@@ -39,5 +39,15 @@ object Agenda_vsII {
         indiceAtual++
         return "${contatoAtual.telefone}"
     }
+
+    fun verificaRepetido(contato: Contato_vsII): Boolean{
+        var resultado: Boolean = false
+        for( lista in listaContatos){
+            if(lista.telefone == contato.telefone){
+                resultado = true
+            }
+        }
+        return resultado
+    }
 }
 

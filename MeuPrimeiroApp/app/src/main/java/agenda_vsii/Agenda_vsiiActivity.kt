@@ -28,6 +28,8 @@ class Agenda_vsiiActivity : AppCompatActivity() {
                 Toast.makeText(this, "Erro, por favor digite um Nome", Toast.LENGTH_SHORT).show()
             } else if (novoContato.checarTelefoneVazio()){
                 Toast.makeText(this, "Erro, por favor digite um Telefone", Toast.LENGTH_SHORT).show()
+            } else if (Agenda_vsII.verificaRepetido(novoContato)){
+                Toast.makeText(this, "Contato Repetido", Toast.LENGTH_SHORT).show()
             } else {
                 binding.txtEntradaNomeAgendaII.setText("")
                 binding.txtEntradaTelefoneAgendaII.setText("")

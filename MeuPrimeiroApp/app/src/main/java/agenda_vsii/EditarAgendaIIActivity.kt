@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.widget.Toast
 import com.example.meuprimeiroapp.databinding.ActivityEditarAgendaIiactivityBinding
 import com.example.meuprimeiroapp.databinding.ActivityEditarContatoBinding
+import com.google.android.material.dialog.MaterialAlertDialogBuilder
 
 class EditarAgendaIIActivity : AppCompatActivity() {
     private lateinit var binding: ActivityEditarAgendaIiactivityBinding
@@ -28,8 +29,17 @@ class EditarAgendaIIActivity : AppCompatActivity() {
             Toast.makeText(this, "Contato Editado", Toast.LENGTH_SHORT).show()
             finish()
         }
-        
+
         binding.btDeletarEditarAgendaII.setOnClickListener(){
+//            MaterialAlertDialogBuilder(this)
+//                .setTitle("Deletar contato")
+//                .setMessage("Realmente deletar?")
+//                .setNegativeButton("cancelar", null)
+//                .setPositiveButton("Deletar") { _, _ ->
+//                    Agenda_vsII.deletarContato()
+//                    Toast.makeText(this, "Contato removido", Toast.LENGTH_SHORT).show()
+//                    finish()
+//                }
             Agenda_vsII.deletarContato()
             Toast.makeText(this, "Contato Deletado", Toast.LENGTH_SHORT).show()
             finish()

@@ -14,14 +14,19 @@ class AgendaVsIIIActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityAgendaVsIiiactivityBinding.inflate(layoutInflater)
+        adapter = ContatosAdapter(mutableListOf(),::onBtEditarClick)
+        setTitle("Agenda III")
 
         incializaLista()
-
-        adapter = ContatosAdapter(mutableListOf(),::onBtEditarClick)
 
         binding.rvContatos.layoutManager = LinearLayoutManager(this)
         binding.rvContatos.adapter = adapter
         binding.rvContatos.addItemDecoration(DividerItemDecoration(this, LinearLayoutManager.VERTICAL))
+
+        binding.btAdicionarAgendaIII.setOnClickListener(){
+            val intent = Intent(this, TelaAdicionarAgendaIIIActivity::class.java)
+            startActivity(intent)
+        }
 
         setContentView(binding.root)
     }
@@ -31,10 +36,11 @@ class AgendaVsIIIActivity : AppCompatActivity() {
             listOf(
                 ContatosIII("1 Alex", "1111"),
                 ContatosIII("2 Sabrina", "22222"),
-                ContatosIII("3 Jaqueline", "33333"),
-                ContatosIII("4 Jaqueline", "4444")
+                ContatosIII("3 Givanir", "33333"),
+                ContatosIII("4 Jaqueline", "4444"),
+                ContatosIII("5 Jaqueline", "5555")
+                )
             )
-        )
     }
 
     fun onBtEditarClick(indiceLista: Int) {
