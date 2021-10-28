@@ -3,7 +3,9 @@ package agenda_vsiii
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
+import com.example.meuprimeiroapp.R
 import com.example.meuprimeiroapp.databinding.ActivityEditarContatoBinding
+import com.google.android.material.dialog.MaterialAlertDialogBuilder
 
 class EditarContatoActivity : AppCompatActivity() {
     private lateinit var binding: ActivityEditarContatoBinding
@@ -11,7 +13,7 @@ class EditarContatoActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityEditarContatoBinding.inflate(layoutInflater)
-        setTitle("Editar Contato")
+        setTitle(getString(R.string.editar_contato))
 
         val indiceContato = intent.getIntExtra("indiceContato", -1)
         val nome: String = AgendaIII.listaContatos[indiceContato].nome
@@ -22,14 +24,24 @@ class EditarContatoActivity : AppCompatActivity() {
         binding.btSalvarAgendaIII.setOnClickListener() {
             AgendaIII.listaContatos[indiceContato].nome = binding.txtNomeEditar.text.toString()
             AgendaIII.listaContatos[indiceContato].telefone = binding.txtTelefone.text.toString()
-            Toast.makeText(this, "Contato Salvo com Sucesso!", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, getString(R.string.contato_salvo_sucesso), Toast.LENGTH_SHORT).show()
             finish()
         }
 
         binding.btDeletarAgendaIII.setOnClickListener() {
-            AgendaIII.listaContatos.removeAt(indiceContato)
-            Toast.makeText(this, "Contato Deletado com Sucesso!", Toast.LENGTH_SHORT).show()
-            finish()
+            MaterialAlertDialogBuilder(this)
+                .setTitle(getString(R.string.deletar_contato))
+                .setMessage(getString(R.string.realmente_deletar))
+                .setNegativeButton(getString(R.string.cancelar), null)
+                .setPositiveButton(getString(R.string.deletar)) { _,_ ->
+                    AgendaIII.listaContatos.removeAt(indiceContato)
+                    Toast.makeText(this, getString(R.string.contato_deletado), Toast.LENGTH_SHORT ).show()
+                    finish()
+                }.show()
+
+//            AgendaIII.listaContatos.removeAt(indiceContato)
+//            Toast.makeText(this, "Contato Deletado com Sucesso!", Toast.LENGTH_SHORT).show()
+//            finish()
         }
         setContentView(binding.root)
     }

@@ -1,2 +1,6 @@
-package agenda_vsii;public class EditarAgendaVsIIActivity {
+package agenda_vsii;
+
+import android.app.Activity;
+
+public class EditarAgendaVsIIActivity extends Activity {
 }

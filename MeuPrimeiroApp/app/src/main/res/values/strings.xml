@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">MeuPrimeiroApp</string>
+    <string name="telefone">Telefone</string>
+    <string name="nome">Nome</string>
+    <string name="salvar">Salvar</string>
+    <string name="deletar">Deletar</string>
+    <string name="ordem_alfabetica_a_z">Ordem alfabética A-Z</string>
+    <string name="editar">Editar</string>
+    <string name="deletar_contato">Deletar Contato</string>
+    <string name="realmente_deletar">Realmente deletar?</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="contato_deletado">Contato deletado</string>
+    <string name="editar_contato">Editar Contato</string>
+    <string name="contato_salvo_sucesso">Contato Salvo com Sucesso!</string>
 </resources>

@@ -13,9 +13,6 @@
             android:name="agenda_vsiii.TelaAdicionarAgendaIIIActivity"
             android:exported="true" />
         <activity
-            android:name="agenda_vsiv.AgendaVsIVActivity"
-            android:exported="true" />
-        <activity
             android:name="agenda_vsii.ListaContatosActivity"
             android:exported="true" />
         <activity
@@ -26,7 +23,14 @@
             android:exported="true" />
         <activity
             android:name="agenda_vsiii.AgendaVsIIIActivity"
-            android:exported="true" />
+            android:exported="true"
+            android:theme="@style/NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name="agenda_vsii.ListaContatosAgendaIIActivity"
             android:exported="true" />
@@ -35,13 +39,7 @@
             android:exported="true" />
         <activity
             android:name="agenda_vsii.Agenda_vsiiActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:exported="true"/>
         <activity
             android:name="agenda_vsi.AgendaActivity"
             android:exported="true" />
