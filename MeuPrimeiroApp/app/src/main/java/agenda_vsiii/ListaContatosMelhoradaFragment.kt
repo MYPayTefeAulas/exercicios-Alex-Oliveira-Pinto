@@ -12,6 +12,9 @@ import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.meuprimeiroapp.*
 import com.example.meuprimeiroapp.databinding.FragmentListaContatosBinding
+import enuns.TipoOrdenacao
+import utils.IntentsConstants
+import utils.PrefsConstants
 
 class ListaContatosMelhoradaFragment : Fragment(), SearchView.OnQueryTextListener {
     private var _binding: FragmentListaContatosBinding? = null
@@ -46,18 +49,22 @@ class ListaContatosMelhoradaFragment : Fragment(), SearchView.OnQueryTextListene
     }
 
     private fun carregaLista() {
-        val config = requireActivity().getSharedPreferences("configuracoes", 0)
-        val radioOrdenacaoSelecionada_id = config.getInt("ordenacaoContatos", R.id.radioOrdenacaoInsercao)
-        when (radioOrdenacaoSelecionada_id) {
-            R.id.radioOrdenacaoAZ -> {
+        val config = requireActivity().getSharedPreferences(PrefsConstants.FILE_CONFIGURACOES, 0)
+        val ordenacaoSelecionada_str = config.getString(
+            PrefsConstants.KEY_TIPO_ORDENACAO_CONTATOS,
+            TipoOrdenacao.ORDEM_INSERCAO.toString()
+        )
+        val ordenacaoSelecionada: TipoOrdenacao = TipoOrdenacao.valueOf(ordenacaoSelecionada_str!!)
+        when (ordenacaoSelecionada) {
+            TipoOrdenacao.ALFABETICA_AZ -> {
                 val listaOrdenada = AgendaIII.listaContatos.sortedBy { it.nome }
                 adapter.swapData(listaOrdenada)
             }
-            R.id.radioOrdenacaoZA -> {
+            TipoOrdenacao.ALFABETICA_ZA -> {
                 val listaOrdenada = AgendaIII.listaContatos.sortedByDescending { it.nome }
                 adapter.swapData(listaOrdenada)
             }
-            else -> {
+            TipoOrdenacao.ORDEM_INSERCAO -> {
                 adapter.swapData(AgendaIII.listaContatos)
             }
         }
@@ -68,7 +75,7 @@ class ListaContatosMelhoradaFragment : Fragment(), SearchView.OnQueryTextListene
             when (menuItem.itemId) {
                 R.id.toolbarContatosBusca -> {
                     val searchView = menuItem?.actionView as SearchView
-                    searchView.queryHint = "Digite para pesquisar"
+                    searchView.queryHint = getString(R.string.digite_para_pesquisar)
                     searchView.setOnQueryTextListener(this)
                     true
                 }
@@ -105,7 +112,7 @@ class ListaContatosMelhoradaFragment : Fragment(), SearchView.OnQueryTextListene
 
     fun onBtEditarClick(indiceLista: Int) {
         val intent = Intent(context, EditarContatoActivity::class.java)
-        intent.putExtra("indiceContato", indiceLista)
+        intent.putExtra(IntentsConstants.INT_ID_CONTATO, adapter.listaContatos[indiceLista].id)
         startActivity(intent)
     }
 }

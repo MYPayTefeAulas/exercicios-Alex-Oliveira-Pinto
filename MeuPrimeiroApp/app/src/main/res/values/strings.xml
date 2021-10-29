@@ -17,4 +17,5 @@
     <string name="contatos">Contatos</string>
     <string name="ordem_alfabetica_z_a">Ordem alfabética Z-A</string>
     <string name="ordem_de_insercao">Ordem de Inserção</string>
+    <string name="digite_para_pesquisar">Digite para pesquisar</string>
 </resources>
