@@ -5,11 +5,12 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.appcompat.widget.SearchView
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.meuprimeiroapp.R
+import com.example.meuprimeiroapp.*
 import com.example.meuprimeiroapp.databinding.FragmentListaContatosBinding
 
 class ListaContatosMelhoradaFragment : Fragment(), SearchView.OnQueryTextListener {
@@ -46,19 +47,26 @@ class ListaContatosMelhoradaFragment : Fragment(), SearchView.OnQueryTextListene
 
     private fun carregaLista() {
         val config = requireActivity().getSharedPreferences("configuracoes", 0)
-        val listaOrdemAlfabetica = config.getBoolean("listaContatosAlfabetico", false)
-        if (listaOrdemAlfabetica) {
-            val listaOrdenada = AgendaIII.listaContatos.sortedBy { it.nome }
-            adapter.swapData(listaOrdenada)
-        } else {
-            adapter.swapData(AgendaIII.listaContatos)
+        val radioOrdenacaoSelecionada_id = config.getInt("ordenacaoContatos", R.id.radioOrdenacaoInsercao)
+        when (radioOrdenacaoSelecionada_id) {
+            R.id.radioOrdenacaoAZ -> {
+                val listaOrdenada = AgendaIII.listaContatos.sortedBy { it.nome }
+                adapter.swapData(listaOrdenada)
+            }
+            R.id.radioOrdenacaoZA -> {
+                val listaOrdenada = AgendaIII.listaContatos.sortedByDescending { it.nome }
+                adapter.swapData(listaOrdenada)
+            }
+            else -> {
+                adapter.swapData(AgendaIII.listaContatos)
+            }
         }
     }
 
-    private fun initTopBar(){
-        binding.toolbarContatos.setOnMenuItemClickListener{ menuItem ->
-            when(menuItem.itemId){
-                R.id.toolbarContatosBusca ->{
+    private fun initTopBar() {
+        binding.toolbarContatos.setOnMenuItemClickListener { menuItem ->
+            when (menuItem.itemId) {
+                R.id.toolbarContatosBusca -> {
                     val searchView = menuItem?.actionView as SearchView
                     searchView.queryHint = "Digite para pesquisar"
                     searchView.setOnQueryTextListener(this)
@@ -68,6 +76,7 @@ class ListaContatosMelhoradaFragment : Fragment(), SearchView.OnQueryTextListene
             }
         }
     }
+
 
     override fun onQueryTextChange(newText: String?): Boolean =
         onQueryTextSubmit(newText) // vai buscar a cada letra digitada

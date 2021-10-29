@@ -10,9 +10,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MeuPrimeiroApp">
         <activity
-            android:name="agenda_vsiii.TelaAdicionarAgendaIIIActivity"
-            android:exported="true" />
-        <activity
             android:name="agenda_vsii.ListaContatosActivity"
             android:exported="true" />
         <activity

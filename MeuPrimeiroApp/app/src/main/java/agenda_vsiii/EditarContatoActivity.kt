@@ -12,14 +12,18 @@ class EditarContatoActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
         binding = ActivityEditarContatoBinding.inflate(layoutInflater)
+
         setTitle(getString(R.string.editar_contato))
 
         val indiceContato = intent.getIntExtra("indiceContato", -1)
+
         val nome: String = AgendaIII.listaContatos[indiceContato].nome
         val telefone: String = AgendaIII.listaContatos[indiceContato].telefone
         binding.txtTelefone.setText(telefone)
         binding.txtNomeEditar.setText(nome)
+        binding.switchContatoFavorito.isChecked = AgendaIII.listaContatos[indiceContato].favorito
 
         binding.btSalvarAgendaIII.setOnClickListener() {
             AgendaIII.listaContatos[indiceContato].nome = binding.txtNomeEditar.text.toString()
@@ -38,11 +42,13 @@ class EditarContatoActivity : AppCompatActivity() {
                     Toast.makeText(this, getString(R.string.contato_deletado), Toast.LENGTH_SHORT ).show()
                     finish()
                 }.show()
-
-//            AgendaIII.listaContatos.removeAt(indiceContato)
-//            Toast.makeText(this, "Contato Deletado com Sucesso!", Toast.LENGTH_SHORT).show()
-//            finish()
         }
+
+        binding.switchContatoFavorito.setOnCheckedChangeListener { _, isChecked ->
+            AgendaIII.listaContatos[indiceContato].favorito = isChecked
+
+        }
+
         setContentView(binding.root)
     }
 }

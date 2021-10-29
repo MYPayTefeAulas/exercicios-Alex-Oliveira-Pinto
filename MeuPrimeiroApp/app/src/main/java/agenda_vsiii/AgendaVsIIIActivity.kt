@@ -45,25 +45,25 @@ class AgendaVsIIIActivity : AppCompatActivity() {
     private fun incializaLista() {
         AgendaIII.listaContatos.addAll(
             listOf(
-                ContatosIII("1 Alex", "097984002561"),
-                ContatosIII("2 Sabrina", "097987845612"),
-                ContatosIII("3 Givanir", "097965235478"),
-                ContatosIII("4 Jaqueline", "097956215784"),
-                ContatosIII("5 Pain", "097985562164"),
-                ContatosIII("6 Konan", "097986231452"),
-                ContatosIII("7 Itachi", "097984125638"),
-                ContatosIII("8 Kisame", "097985623148"),
-                ContatosIII("9 Deidara", "097984009999"),
-                ContatosIII("10 Sasori", "097984561111"),
-                ContatosIII("11 Hidan", "097984561212"),
-                ContatosIII("12 Kakuzu", "097984551313"),
-                ContatosIII("13 Orochimaru", "097984001414"),
-                ContatosIII("14 Zetsu", "097984001515"),
-                ContatosIII("15 Madara", "097984001616"),
-                ContatosIII("16 Sasuke", "097984122587"),
-                ContatosIII("17 Killer Bee", "097984889966"),
-                ContatosIII("18 Kurama", "097984562763"),
-                ContatosIII("19 Hashirama", "097984565251")
+                ContatosIII("Alex", "097984002561"),
+                ContatosIII("Sabrina", "097987845612"),
+                ContatosIII("Givanir", "097965235478"),
+                ContatosIII("Jaqueline", "097956215784"),
+                ContatosIII("Pain", "097985562164"),
+                ContatosIII("Konan", "097986231452"),
+                ContatosIII("Itachi", "097984125638"),
+                ContatosIII("Kisame", "097985623148"),
+                ContatosIII("Deidara", "097984009999"),
+                ContatosIII("Sasori", "097984561111"),
+                ContatosIII("Hidan", "097984561212"),
+                ContatosIII("Kakuzu", "097984551313"),
+                ContatosIII("Orochimaru", "097984001414"),
+                ContatosIII("Zetsu", "097984001515"),
+                ContatosIII("Madara", "097984001616"),
+                ContatosIII("Sasuke", "097984122587"),
+                ContatosIII("Killer", "097984889966"),
+                ContatosIII("Kurama", "097984562763"),
+                ContatosIII("Hashirama", "097984565251")
             )
         )
     }

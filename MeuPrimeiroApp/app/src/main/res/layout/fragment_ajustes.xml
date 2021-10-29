@@ -5,21 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <Switch
-        android:id="@+id/switch1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="112dp"
-        android:layout_marginTop="140dp"
-        android:text="@string/ordem_alfabetica_a_z"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <com.google.android.material.appbar.MaterialToolbar
         android:id="@+id/toolbarAjustes"
         style="@style/Widget.MaterialComponents.Toolbar.Primary"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
         android:background="?attr/colorPrimary"
         android:minHeight="?attr/actionBarSize"
         app:layout_constraintEnd_toEndOf="parent"
@@ -27,6 +18,47 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:subtitleTextColor="#E91E63"
-        app:title="        Ajustes"
+        app:title="@string/ajustes"
         app:titleTextColor="#FFFFFF" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupOrdenacao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/toolbarAjustes">
+
+        <RadioButton
+            android:id="@+id/radioOrdenacaoAZ"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/ordem_alfabetica_a_z" />
+
+        <RadioButton
+            android:id="@+id/radioOrdenacaoZA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/ordem_alfabetica_z_a" />
+
+        <RadioButton
+            android:id="@+id/radioOrdenacaoInsercao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/ordem_de_insercao" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="112dp"
+        android:text="Ordenação dos Contatos"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.164"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
