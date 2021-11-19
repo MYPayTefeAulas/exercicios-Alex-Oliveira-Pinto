@@ -1,3 +1,0 @@
-package agenda_vsii
-
-class ActivityAgendaVsiiBinding

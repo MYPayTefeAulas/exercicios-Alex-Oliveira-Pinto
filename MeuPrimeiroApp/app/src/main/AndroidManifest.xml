@@ -10,18 +10,24 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MeuPrimeiroApp">
         <activity
+            android:name="ui.AdicionarActivity"
+            android:exported="true" />
+        <activity
+            android:name="agenda_vsiii.TelaAdicionarAgendaIIIActivity"
+            android:exported="true" />
+        <activity
             android:name="agenda_vsii.ListaContatosActivity"
             android:exported="true" />
         <activity
             android:name="agenda_vsii.EditarAgendaIIActivity"
             android:exported="true" />
         <activity
-            android:name="agenda_vsiii.EditarContatoActivity"
+            android:name="ui.EditarContatoActivity"
             android:exported="true" />
         <activity
-            android:name="agenda_vsiii.AgendaVsIIIActivity"
+            android:name="ui.AgendaVsIIIActivity"
             android:exported="true"
-            android:theme="@style/NoActionBar" >
+            android:theme="@style/NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -36,7 +42,7 @@
             android:exported="true" />
         <activity
             android:name="agenda_vsii.Agenda_vsiiActivity"
-            android:exported="true"/>
+            android:exported="true" />
         <activity
             android:name="agenda_vsi.AgendaActivity"
             android:exported="true" />

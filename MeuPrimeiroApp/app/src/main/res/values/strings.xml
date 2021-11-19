@@ -18,4 +18,9 @@
     <string name="ordem_alfabetica_z_a">Ordem alfabética Z-A</string>
     <string name="ordem_de_insercao">Ordem de Inserção</string>
     <string name="digite_para_pesquisar">Digite para pesquisar</string>
+    <string name="adicionar">Adicionar</string>
+    <string name="erro_nome_telefone_vazio">Erro, digite um nome e telefone</string>
+    <string name="erro_nome_vazio">Erro, nome vazio</string>
+    <string name="erro_telefone_vazio">Erro, telefone vazio</string>
+    <string name="contato_repetido">Contato repetido</string>
 </resources>
